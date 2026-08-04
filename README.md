@@ -117,8 +117,6 @@ cd esp_gateway
 pip install -r requirements.txt
 ```
 
-> `esp_gateway` is the current package/folder name — update this section if you rename the project to `esb_gateway` before publishing.
-
 ### Configuration
 
 ```bash
@@ -126,8 +124,6 @@ cp .env.example .env
 ```
 
 Application and logging settings live in `config/settings.py` and `config/logging_config.py`. Route definitions are picked up by `routing/router.py` and dispatched to the handlers in `routing/handlers.py`.
-
-> Add a short example of an actual route/config entry here once you finalize the config schema — it's the first thing a new user looks for.
 
 ### Running locally
 
@@ -162,12 +158,6 @@ The gateway exposes operational endpoints via `monitoring/`:
 - **Metrics** — Prometheus-compatible metrics for request throughput, error rates, and queue depth.
 - **Tracing** — distributed tracing hooks for following a message across parsers, middleware, and destinations.
 
-> Add the actual endpoint paths (e.g. `/health`, `/metrics`) once confirmed from `monitoring/health.py` and `monitoring/metrics.py`.
-
 ## Project Status
 
 Actively maintained. Current focus: a management and monitoring GUI for visualizing active routes, throughput, and error rates in real time.
-
-## License
-
-MIT — see [LICENSE](LICENSE) for details.
